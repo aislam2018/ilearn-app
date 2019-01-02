@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>iLearn</title>
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+  <body>
+
+    <h1>iLEARN</h1>
+  <div class="mainFormContainer">
+
+
+    <div class="ui icon input">
+      <input id="filter-input" type="text" name="filter" value="" placeholder="Search for deck...">
+      <i class="search icon"></i>
+    </div>
+    <div class="deckContainer">
+      <form class="add-deck-form" style="">
+        <h5>Create a Deck!</h5>
+        <input id="deck-input" type="text" name="deck" value="" placeholder="Enter a deck title..." class="input-text">
+        <br>
+        <input type="submit" name="submit" value="Create New Deck" class="submit">
+      </form>
+    </div>
+    <div class="container">
+      <form class="add-card-form" style="">
+        <h5>Create an Index Card!</h5>
+        <label for="deck-list">Select A Deck:</label>
+        <br>
+        <select id="deck-list">
+          <option value="The deck" selected>Deck List </option>
+        </select>
+        <br>
+        <label for="subject-list">Select A Subject:</label>
+        <br>
+        <select id="subject-list">
+          <option value="The subject" selected>Subject List </option>
+        </select>
+        <br>
+        <input  id="question-input" type="text" name="question" value="" placeholder="Enter a question..." class="input-text">
+        <br>
+        <input id="answer-input" type="text" name="answer" value="" placeholder="Enter an answer..." class="input-text">
+        <br>
+        <input type="submit" name="submit" value="Create New Card" class="submit">
+      </form>
+    </div>
+
+    <div class="editContainer">
+      <form id="edit-card-form" style="">
+        <h5>Edit an Index Card!</h5>
+        <p style="display:none"><p>
+        <input  id="edit-question-input" type="text" name="question" value="" class="input-text">
+        <br>
+        <input id="edit-answer-input" type="text" name="answer" value="" class="input-text">
+        <br>
+        <input type="submit" name="submit" value="Edit Card" class="submit">
+      </form>
+
+      </div>
+    </div>
+
+    <div class="maincontainer">
+
+    </div>
+
+      <script type="text/javascript" src="index.js"></script>
+
+  </body>
+</html>
